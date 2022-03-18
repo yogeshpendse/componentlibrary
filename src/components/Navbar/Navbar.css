@@ -1,0 +1,78 @@
+:root {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  --primary: #0d6efd;
+  --secondary: #6ea8fe;
+  --tertiary: #084298;
+  --success: #52c41a;
+  --danger: #ff4d4f;
+  --warning: #faad14;
+  --info: #1890ff;
+  --light-text: white;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary);
+  color: var(--light-text);
+}
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.6rem;
+  margin: 0 2rem;
+}
+.navbar__togglebox {
+  display: block;
+}
+.navbar__toggle {
+  font-size: 1.6rem;
+  color: inherit;
+}
+.navbar__dlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-left: 1.8rem;
+  margin-bottom: 1rem;
+}
+.navbar__dlink:hover,
+.navbar__link:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+.navbar__dlink {
+  font-size: 1.8rem;
+}
+.navbar__brand {
+  font-size: 2.4rem;
+}
+.navbar__dropdown {
+  display: none;
+}
+.navbar__dropdown--open {
+  display: block;
+}
+.navbar__links {
+  display: none;
+}
+@media (min-width: 768px) {
+  .navbar__container {
+    height: 5.6rem;
+    margin: 0 2rem;
+  }
+  .navbar__links {
+    display: flex;
+    gap: 2.4rem;
+  }
+  .navbar__link {
+    font-size: 2rem;
+  }
+  .navbar__toggle {
+    display: none;
+  }
+  .navbar__togglebox {
+    display: none;
+  }
+}
