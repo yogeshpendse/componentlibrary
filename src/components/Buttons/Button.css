@@ -1,0 +1,42 @@
+:root {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  --primary: #0d6efd;
+  --secondary: #6ea8fe;
+  --tertiary: #084298;
+  --success: #52c41a;
+  --danger: #ff4d4f;
+  --warning: #faad14;
+  --info: #1890ff;
+  --light-text: white;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.btn {
+  font-size: 1.8rem;
+  border-radius: 0.4rem;
+  padding: 1rem 2rem;
+}
+.btn--primary {
+  background-color: var(--primary);
+  color: var(--light-text);
+  font-weight: bold;
+}
+
+.btn--secondary {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  font-weight: bold;
+}
+.btn--olprimary {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-weight: bold;
+}
+.btn--olsecondary {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  font-weight: bold;
+}

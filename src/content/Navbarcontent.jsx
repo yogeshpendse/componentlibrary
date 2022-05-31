@@ -56,6 +56,7 @@ export const Navbarcontent = () => {
     <div>
       <h1 className="content-header">Navbar</h1>
       <Navbar />
+      <div className="content-component"></div>
       <div className="content-snippet">
         <Codesnnippet code={code} />
       </div>

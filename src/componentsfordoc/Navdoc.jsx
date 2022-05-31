@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../components/Navbar/Navbar.css";
 export function Navdoc() {
   const [state, setState] = useState(true);
@@ -16,7 +17,7 @@ export function Navdoc() {
             </a>
           </li>
           <li className="navbar__link">
-            <a className="navbar__dlink" href="/docs">
+            <a className="navbar__dlink" href="/docs/navbar">
               Docs
             </a>
           </li>
