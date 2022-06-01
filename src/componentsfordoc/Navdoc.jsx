@@ -9,20 +9,24 @@ export function Navdoc() {
   return (
     <nav className="navbar">
       <div className="navbar__container">
-        <div className="navbar__brand">bluecss</div>
+        <Link className="navbar__brand" to="/">
+          bluecss
+        </Link>
         <ul className="navbar__links">
           <li className="navbar__link">
-            <a className="navbar__dlink" href="/">
+            <Link className="navbar__dlink" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li className="navbar__link">
             <a className="navbar__dlink" href="/docs/navbar">
-              Docs
+              <Link className="navbar__dlink" to="/docs/cards">
+                Docs
+              </Link>
             </a>
           </li>
           <li className="navbar__link">
-            <a className="navbar__dlink" href="/">
+            <a className="navbar__dlink" href="https://github.com">
               GitHub
             </a>
           </li>
@@ -31,7 +35,7 @@ export function Navdoc() {
           <button onClick={() => handleclick(state)} className="navbar__toggle">
             {state ? (
               <>
-                <i className="bi bi-list"></i>{" "}
+                <i className="bi bi-list"></i>
               </>
             ) : (
               <>
@@ -53,14 +57,17 @@ export function Navdoc() {
             <a className="navbar__dlink" href="/">
               Home
             </a>
+            <Link className="navbar__dlink" to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <a className="navbar__dlink" href="/docs">
+            <Link className="navbar__dlink" to="/docs/cards">
               Docs
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="navbar__dlink" href="/">
+            <a className="navbar__dlink" href="https://github.com">
               GitHub
             </a>
           </li>

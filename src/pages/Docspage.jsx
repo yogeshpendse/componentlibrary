@@ -4,9 +4,17 @@ import "../components/Navbar/Navbar.css";
 import "./Docspage.css";
 import { Navbarcontent } from "../content/Navbarcontent";
 import { Cardcontent } from "../content/Cardcontent";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Buttoncontent } from "../content/Buttoncontent";
 import { Imagecontent } from "../content/Imagecontent";
+import { Modalcontent } from "../content/Modalcontent";
+import { Toastcontent } from "../content/Toastcontent";
+import { Alertcontent } from "../content/Alertcontent";
+import { Badgedoc } from "../content/Badgedoc";
+import { Listcontent } from "../content/Listcontent";
+import { Gridcontent } from "../content/Gridcontent";
+import { Avatarcontent } from "../content/Avatarcontent";
+import { Inputcontent } from "../content/Inputcontent";
 
 export const Docspage = () => {
   let { id } = useParams();
@@ -46,22 +54,54 @@ export const Docspage = () => {
             >
               image
             </li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside</li>
-            <li className="docsgrid__sidenavlink">lopside_n</li>
+            <li
+              className="docsgrid__sidenavlink"
+              onClick={() => navigate("/docs/modal")}
+            >
+              modal
+            </li>
+            <li
+              className="docsgrid__sidenavlink"
+              onClick={() => navigate("/docs/toast")}
+            >
+              toast
+            </li>
+            <li
+              className="docsgrid__sidenavlink"
+              onClick={() => navigate("/docs/alert")}
+            >
+              alert
+            </li>
+            <li
+              className="docsgrid__sidenavlink"
+              onClick={() => navigate("/docs/badge")}
+            >
+              badge
+            </li>
+            <li
+              className="docsgrid__sidenavlink"
+              onClick={() => navigate("/docs/list")}
+            >
+              list
+            </li>
+            <li
+              className="docsgrid__sidenavlink"
+              onClick={() => navigate("/docs/grid")}
+            >
+              grid
+            </li>
+            <li
+              className="docsgrid__sidenavlink"
+              onClick={() => navigate("/docs/avatar")}
+            >
+              avatar
+            </li>
+            <li
+              className="docsgrid__sidenavlink"
+              onClick={() => navigate("/docs/input")}
+            >
+              input
+            </li>
           </ul>
         </div>
       </div>
@@ -70,6 +110,14 @@ export const Docspage = () => {
         {checker === "cards" && <Cardcontent />}
         {checker === "buttons" && <Buttoncontent />}
         {checker === "image" && <Imagecontent />}
+        {checker === "modal" && <Modalcontent />}
+        {checker === "toast" && <Toastcontent />}
+        {checker === "alert" && <Alertcontent />}
+        {checker === "badge" && <Badgedoc />}
+        {checker === "list" && <Listcontent />}
+        {checker === "grid" && <Gridcontent />}
+        {checker === "avatar" && <Avatarcontent />}
+        {checker === "input" && <Inputcontent />}
       </div>
       <Overlaymenu />
     </div>

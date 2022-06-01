@@ -1,0 +1,123 @@
+:root {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  --primary: #0d6efd;
+  --secondary: #6ea8fe;
+  --tertiary: #084298;
+  --success: #52c41a;
+  --danger: #ff4d4f;
+  --warning: #faad14;
+  --info: #1890ff;
+  --light-text: white;
+}
+.ecard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 1px solid black;
+}
+.ecard__image {
+  width: 100%;
+}
+.ecard {
+  max-width: 21rem;
+}
+.ecard__addtocart {
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+  color: azure;
+}
+.ecard__whishlist {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.ecard__whishlist:hover {
+  color: red;
+  transition: 0.5s;
+}
+.ecard__details {
+  margin: 1rem 0;
+  flex-grow: 1;
+}
+.ecard__price {
+  font-size: 1.6rem;
+  color: darkgreen;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.ecard__name {
+  font-size: 2rem;
+}
+.ecard__description {
+  font-size: 1.2rem;
+}
+.vcard {
+  width: 21rem;
+  display: flex;
+  flex-direction: column;
+}
+.vcard__image {
+  width: 100%;
+}
+.vcard__imagebox {
+  position: relative;
+}
+.vcard__timestamp {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  padding: 0.2rem;
+}
+.vcard__details {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+.vcard__name {
+  font-size: 1.8rem;
+}
+.vcard__view {
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+  color: azure;
+}
+.vcard__playlist {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  padding: 0.2rem;
+}
+.vcard__view:link,
+.vcard__view:hover,
+.vcard__view:active,
+.vcard__view:visited {
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+  color: azure;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+}
+.hcard__image {
+  width: 100%;
+}
+.hcard {
+  max-width: 50rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+.hcard__name {
+  font-size: 2rem;
+}
+.hcard__description {
+  font-size: 1.4rem;
+}

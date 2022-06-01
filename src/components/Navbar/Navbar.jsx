@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 export const Navbar = () => {
   const [state, setState] = useState(true);
@@ -11,19 +12,19 @@ export const Navbar = () => {
         <div className="navbar__brand">Brand</div>
         <ul className="navbar__links">
           <li className="navbar__link">
-            <a className="navbar__dlink" href="/">
+            <Link className="navbar__dlink" to="/docs/navbar">
               link1
-            </a>
+            </Link>
           </li>
           <li className="navbar__link">
-            <a className="navbar__dlink" href="/">
+            <Link className="navbar__dlink" to="/docs/navbar">
               link2
-            </a>
+            </Link>
           </li>
           <li className="navbar__link">
-            <a className="navbar__dlink" href="/">
+            <Link className="navbar__dlink" to="/docs/navbar">
               link3
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="navbar__togglebox">
@@ -47,19 +48,19 @@ export const Navbar = () => {
       >
         <ul className="navbar__dlinks">
           <li>
-            <a className="navbar__dlink" href="/">
+            <Link className="navbar__dlink" to="/docs/navbar">
               link1
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="navbar__dlink" href="/">
+            <Link className="navbar__dlink" to="/docs/navbar">
               link2
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="navbar__dlink" href="/">
+            <Link className="navbar__dlink" to="/docs/navbar">
               link3
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

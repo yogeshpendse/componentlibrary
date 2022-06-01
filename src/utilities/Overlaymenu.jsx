@@ -66,14 +66,78 @@ export const Overlaymenu = () => {
             >
               lists
             </li>
-            <li className="overlay__link">lopside</li>
-            <li className="overlay__link">lopside</li>
-            <li className="overlay__link">lopside</li>
-            <li className="overlay__link">lopside</li>
-            <li className="overlay__link">lopside</li>
-            <li className="overlay__link">lopside</li>
-            <li className="overlay__link">lopside</li>
-            <li className="overlay__link">lopside_n</li>
+            <li
+              className="overlay__link"
+              onClick={() => {
+                navigate("/docs/modal");
+                setState(false);
+              }}
+            >
+              modal
+            </li>
+            <li
+              className="overlay__link"
+              onClick={() => {
+                navigate("/docs/toast");
+                setState(false);
+              }}
+            >
+              toast
+            </li>
+            <li
+              className="overlay__link"
+              onClick={() => {
+                navigate("/docs/alert");
+                setState(false);
+              }}
+            >
+              alert
+            </li>
+            <li
+              className="overlay__link"
+              onClick={() => {
+                navigate("/docs/badge");
+                setState(false);
+              }}
+            >
+              badge
+            </li>
+            <li
+              className="overlay__link"
+              onClick={() => {
+                navigate("/docs/list");
+                setState(false);
+              }}
+            >
+              list
+            </li>
+            <li
+              className="overlay__link"
+              onClick={() => {
+                navigate("/docs/grid");
+                setState(false);
+              }}
+            >
+              grid
+            </li>
+            <li
+              className="overlay__link"
+              onClick={() => {
+                navigate("/docs/avatar");
+                setState(false);
+              }}
+            >
+              avatar
+            </li>
+            <li
+              className="overlay__link"
+              onClick={() => {
+                navigate("/docs/input");
+                setState(false);
+              }}
+            >
+              input
+            </li>
           </ul>
         </div>
       )}

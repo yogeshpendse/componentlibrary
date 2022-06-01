@@ -1,4 +1,3 @@
-import { Buttons } from "../components/Buttons/Button";
 import "../components/Buttons/Button.css";
 import Codesnnippet from "../utilities/Codesnnippet";
 import "./content.css";
@@ -14,7 +13,7 @@ export const Buttoncontent = () => {
     `;
   return (
     <>
-      <h1>Buttons</h1>
+      <h1 className="content-header">Buttons</h1>
       <div className="content-component">
         <button className="btn btn--primary" style={{ marginRight: "2rem" }}>
           primary button

@@ -1,5 +1,6 @@
 import { Navbar } from "../components/Navbar/Navbar";
 import Codesnnippet from "../utilities/Codesnnippet";
+import "../components/Navbar/Navbar.css";
 import "./content.css";
 export const Navbarcontent = () => {
   const code = `
@@ -54,9 +55,11 @@ export const Navbarcontent = () => {
   `;
   return (
     <div>
+      {/* <Link to={`/profile/${str}`}> */}
       <h1 className="content-header">Navbar</h1>
-      <Navbar />
-      <div className="content-component"></div>
+      <div className="content-component">
+        <Navbar />
+      </div>
       <div className="content-snippet">
         <Codesnnippet code={code} />
       </div>

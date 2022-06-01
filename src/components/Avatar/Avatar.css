@@ -10,17 +10,14 @@
   --info: #1890ff;
   --light-text: white;
 }
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.avatar {
+  width: 10rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
 }
-.list__heading {
-  font-size: 2rem;
-  font-weight: 600;
+.avatar--sm {
+  width: 5.6rem;
 }
-.list__item {
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
+.avatar--xs {
+  width: 3.6rem;
 }

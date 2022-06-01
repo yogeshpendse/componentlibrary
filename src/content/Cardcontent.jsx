@@ -7,7 +7,7 @@ export const Cardcontent = () => {
   <div className="vcard__imagebox">
     <img
       className="vcard__image"
-      src="https://i.ytimg.com/vi/r9PeYPHdpNo/hq720.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&amp;rs=AOn4CLBQjPLdZ0CwGhT0txReEAVSnVHH5Q"
+      src="./image"
       alt="video"
     />
     <p className="vcard__timestamp">51 min</p>
@@ -29,7 +29,7 @@ export const Cardcontent = () => {
   <div className="ecard__imagebox">
     <img
       className="ecard__image"
-      src="https://images.pexels.com/photos/1166120/pexels-photo-1166120.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+      src="./image"
       alt="pizza"
     />
   </div>
@@ -50,7 +50,7 @@ export const Cardcontent = () => {
   <div className="hcard__imagebox">
     <img
       className="hcard__image"
-      src="https://i.ytimg.com/vi/r9PeYPHdpNo/hq720.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&amp;rs=AOn4CLBQjPLdZ0CwGhT0txReEAVSnVHH5Q"
+      src="./image"
       alt="horizimage"
     />
   </div>
