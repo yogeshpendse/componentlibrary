@@ -8,4 +8,97 @@
   --danger: #ff4d4f;
   --warning: #faad14;
   --info: #1890ff;
+  --light-text: white;
+}
+/* @import url("https://bluecss.netlify.app/style.css"); */
+.hompage {
+  padding: 0rem 3rem;
+  column-gap: 2rem;
+}
+.homenav__home {
+  font-size: 4rem;
+}
+.homenav {
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .homenav {
+    padding: 1rem 3rem;
+  }
+}
+.homenav__links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.homenav__link {
+  font-size: 2.4rem;
+}
+.hompage__header {
+  grid-area: sectiona;
+  font-size: 6.4rem;
+  margin-bottom: 3rem;
+}
+.hompage__header:hover {
+  color: var(--light-text);
+  background-color: var(--primary);
+  transition: all 0.3s;
+  animation-direction: alternate;
+  transform: scale(1.5);
+}
+.hompage__description {
+  grid-area: sectionb;
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+.hompage__install {
+  grid-area: sectionc;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.hompage__sample {
+  grid-area: sectiond;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .hompage {
+    display: grid;
+    grid-template-areas:
+      "sectiona sectionb"
+      "sectiona sectionb"
+      "sectionc sectiond"
+      "sectionc sectiond";
+    justify-items: center;
+  }
+}
+.homenav {
+  height: 8rem;
+}
+.hompage__installheader {
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+  flex-grow: 1;
+}
+.hompage__sampleheader {
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+}
+.hompage__installdesc {
+  font-size: 1.8rem;
+}
+.hompage__sampledesc {
+  font-size: 1.8rem;
+}
+.hompage__grow {
+  flex-grow: 1;
 }
