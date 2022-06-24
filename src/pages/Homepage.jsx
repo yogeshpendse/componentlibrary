@@ -14,7 +14,10 @@ export const Homepage = () => {
           <Link className="homenav__link" to="/docs/buttons">
             Docs
           </Link>
-          <a className="homenav__link" href="https://github.com">
+          <a
+            className="homenav__link"
+            href="https://github.com/yogeshpendse/componentlibrary/tree/development"
+          >
             Github
           </a>
         </div>
