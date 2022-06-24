@@ -54,9 +54,6 @@ export function Navdoc() {
       >
         <ul className="navbar__dlinks">
           <li>
-            <a className="navbar__dlink" href="/">
-              Home
-            </a>
             <Link className="navbar__dlink" to="/">
               Home
             </Link>
