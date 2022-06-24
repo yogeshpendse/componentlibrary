@@ -28,7 +28,7 @@ export const Gridcontent = () => {
 </div>
   `;
   const code2 = `
-  <div className="grid grid__col--2">
+  <div className="grid grid__col--3">
   <div className="parent__div">
     <img
       src="./image"
