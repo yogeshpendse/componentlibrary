@@ -64,7 +64,10 @@ export function Navdoc() {
             </Link>
           </li>
           <li>
-            <a className="navbar__dlink" href="https://github.com">
+            <a
+              className="navbar__dlink"
+              href="https://github.com/yogeshpendse/componentlibrary/tree/development"
+            >
               GitHub
             </a>
           </li>

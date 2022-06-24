@@ -14,10 +14,22 @@
   padding: 0;
   margin: 0;
 }
+.btn-lrg {
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  padding: 1.2rem 2.4rem;
+  width: fit-content;
+}
 .btn {
   font-size: 1.8rem;
   border-radius: 0.4rem;
   padding: 1rem 2rem;
+  width: fit-content;
+}
+.btn-sml {
+  font-size: 1.4rem;
+  border-radius: 0.2rem;
+  padding: 0.6rem 1.2rem;
   width: fit-content;
 }
 .btn--primary {

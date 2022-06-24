@@ -11,6 +11,10 @@ export const Buttoncontent = () => {
         <button className="btn btn--olprimary">outline-primary</button>
         <button className="btn btn--olsecondary">outline-secondary</button>
     `;
+  const code2 = `
+      <button className="btn-sml btn--primary">button</button>
+      <button className="btn-lrg btn--primary">button</button>
+    `;
   return (
     <>
       <h1 className="content-header">Buttons</h1>
@@ -31,6 +35,18 @@ export const Buttoncontent = () => {
       </div>
       <div className="content-snippet">
         <Codesnnippet code={code1} />
+      </div>
+      <div className="content-component">
+        <button
+          className="btn-lrg btn--primary"
+          style={{ marginRight: "2rem" }}
+        >
+          large button
+        </button>
+        <button className="btn-sml btn--primary">small button</button>
+      </div>
+      <div className="content-snippet">
+        <Codesnnippet code={code2} />
       </div>
     </>
   );
